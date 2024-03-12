@@ -1,0 +1,97 @@
+/* @import "~antd/dist/antd.css"; */
+
+.App {
+  text-align: center;
+  background: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.component-content {
+  padding: 3em;
+}
+.project-form {
+  padding: 3em;
+}
+.disabled-link {
+  pointer-events: none;
+}
+.drawer {
+  padding: 2em;
+}
+.body{
+background: black;
+}
+.drawer-content {
+  padding: 2em;
+}
+.drawer-components {
+  margin-top: 1em;
+}
+.gray {
+  color: gray;
+}
+.black {
+  color: black;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-picker-panels {
+  display: flex;
+  flex-direction: column;
+}
+.ant-picker-panels > *:last-child .ant-picker-body {
+  /* to make calendar responsive */
+  display: none !important;
+}
+.ant-card-body {
+  padding: 6px !important;
+}
+.video-container {
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 30px;
+}
+.video-container:hover .play-button {
+  opacity: 1;
+}

@@ -1,0 +1,20 @@
+
+.ant-menu {
+    background: #001529;
+}
+.header {
+    display: flex;
+}
+.header-body {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #e8e8e8;
+    gap: 0px;
+    justify-content: flex-start;
+}
+@media (max-width: 768px) {
+    .header-body {
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
